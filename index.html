@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rafael · Portafolio</title>
+  <meta name="description" content="Portafolio de Rafael: quién soy, qué me interesa y mis proyectos de CMP1001.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="kicker">Portafolio · CMP1001</p>
+      <h1>Rafael</h1>
+      <p class="lead">Estudiante de ingeniería en computación.</p>
+      <nav aria-label="Secciones">
+        <a href="#quien">Quién soy</a>
+        <a href="#intereses">Intereses</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sitio">Sobre este sitio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section id="quien">
+      <h2>Quién soy</h2>
+      <p>Soy Rafael. Estudio ingeniería en computación en la USFQ. Me gusta armar cosas con las manos, ya sea una computadora, una pieza impresa en 3D o una página web, y entender cómo funciona cada parte. Quiero aprender a hacer aplicaciones que la gente use de verdad.</p>
+      <p class="small">GitHub: <a href="https://github.com/Teak-24">github.com/Teak-24</a></p>
+    </section>
+
+    <section id="intereses">
+      <h2>Lo que me interesa</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Astronomía</h3>
+          <p>Tengo un telescopio Celestron C8 y estoy armando mi equipo para astrofotografía. Mi meta es ver el eclipse solar total de agosto de 2027 en Andalucía.</p>
+        </article>
+        <article class="card">
+          <h3>Programación</h3>
+          <p>Lo que más me gusta es ver funcionar algo que escribí yo. En CMP1001 hice un Juego de la Vida en JavaScript y un juego cooperativo en línea con cuentas de usuario.</p>
+        </article>
+        <article class="card">
+          <h3>Hardware</h3>
+          <p>Me gusta armar y arreglar computadoras. Armé mi PC con un Ryzen 5 5600X3D y una Radeon RX 9070 GRE, y manejo mi propia red de casa con un router UniFi.</p>
+        </article>
+        <article class="card">
+          <h3>Videojuegos</h3>
+          <p>Tengo un servidor de Minecraft en una computadora vieja y vuelo aviones en Microsoft Flight Simulator 2024, sobre todo el Citation Sovereign+ y el Kodiak anfibio.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>Mis proyectos</h2>
+
+      <article class="proyecto">
+        <figure>
+          <img src="img/proyecto-1.png" alt="Captura del Juego de la Vida con una cuadrícula de celdas amarillas sobre fondo gris" width="960" height="600">
+        </figure>
+        <div class="texto">
+          <h3>Proyecto 1 · Juego de la Vida</h3>
+          <p class="enlace"><a href="https://teak-24.github.io/Game-of-Life/">Abrir el proyecto publicado</a> · <a href="https://github.com/Teak-24/Game-of-Life">Repositorio</a></p>
+          <h4>Qué hace y para quién es</h4>
+          <p>Es una versión del Juego de la Vida de Conway: el usuario dibuja celdas vivas en una cuadrícula y mira cómo evolucionan solas. Es para cualquiera que quiera experimentar con patrones, como parpadeadores o pulsares.</p>
+          <h4>Cómo está hecho</h4>
+          <p>La página la publica GitHub Pages y no usa servidor: no guarda nada, todo vive en el navegador y se pierde al recargar. El JavaScript de la página calcula cada generación y redibuja la cuadrícula en tu propio dispositivo. Decidí que los bordes sean paredes, sin vida fuera del tablero.</p>
+        </div>
+      </article>
+
+      <article class="proyecto">
+        <figure>
+          <img src="img/proyecto-2.png" alt="Captura de Fleet Defense, un juego cooperativo de naves con dos jugadores" width="960" height="600">
+        </figure>
+        <div class="texto">
+          <h3>Proyecto 2 · Fleet Defense</h3>
+          <p class="enlace"><a href="https://usfq-laboratory-4.vercel.app">Abrir el proyecto publicado</a> · <a href="https://github.com/Teak-24/USFQ-Laboratory-4">Repositorio</a></p>
+          <h4>Qué hace y para quién es</h4>
+          <p>Es un arcade cooperativo de oleadas para compañeros de clase. Entras con tu cuenta, ves quién está en línea, invitas a otro piloto, juegan juntos y quedan guardados tus puntajes y tu historial con cada compañero.</p>
+          <h4>Cómo está hecho</h4>
+          <p>La página la publica Vercel. Los datos (cuentas, puntajes e historial de partidas) se guardan en Supabase, y para el aviso de quién está en línea y las invitaciones uso Supabase Realtime. El juego en sí corre con JavaScript en el navegador de los jugadores, no en un servidor.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="sitio">
+      <h2>Sobre este sitio</h2>
+      <p>Usé amarillo sobre gris oscuro porque son los colores de las celdas del Juego de la Vida, mi Proyecto 1: así todo el portafolio se parece a algo que yo hice. Dejé una sola columna y letra grande para que se lea bien en el teléfono sin hacer zoom.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap"><p>Rafael · CMP1001 · USFQ</p></div>
+  </footer>
+
+</body>
+</html>
